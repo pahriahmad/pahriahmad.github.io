@@ -1,0 +1,88 @@
+<html>
+<title>Form Lengkap</title>
+<head>
+<link rel="stylesheet" href="layout1.css">
+</head>
+<body>
+  <header>
+    </header>
+ <nav>
+             <ul>
+                 <li><a href="#"_blank">Home</a></li>
+                 <li><a href="profil.html">Profil</a></li>
+             <li>
+                 <a href="#">Produk</a>
+             <ul>
+                 <li><a href="Gundam SD.html">SD Gundam</a></li>
+                 <li><a href="Gundam HG.html">HG Gundam</a></li>
+	         <li><a href="Gundam MG.html">MG Gundam</a></li>
+	         <li><a href="Gundam RG.html">RG Gundam</a></li>
+                 <li><a href="Gundam PG.html">PG Gundam</a></li>
+            </ul>
+           </li>
+              <li><a href="mitra.html">Mitra</a></li>
+	      <li><a href="kredit.html">Kredit Produk</a></li>
+              <li><a href="service.html">Service Center</a></li>
+              <li><a href="kontak.html">Kontak Admin</a></li>
+             </li>
+        </nav>
+ 
+<form method="get">
+<h2 align=center>IDENTITAS PEMESANAN</h2><hr>
+<p>
+<label>Name
+<input type="text" name="customer_name" required>
+</label> 
+</p>
+
+<p>
+<label>Phone 
+<input type="tel" name="phone_number">
+</label>
+</p>
+
+<p>
+<label>Email 
+<input type="email" name="email_address">
+</label>
+</p>
+
+
+<fieldset>
+<legend>Home Adress</legend>
+<input type="text" name="Home_adress"> 
+</fieldset>
+
+<fieldset>
+<legend>Paket Pengiriman</legend>
+<p><label> <input type="checkbox" name="extras" value="baby"> NextDay </label></p>
+<p><label> <input type="checkbox" name="extras" value="wheelchair"> reguler </label></p>
+<p><label> <input type="checkbox" name="extras" value="tip"> SameDay (Bandung only)</label></p>
+<p><label> <input type="checkbox" name="extras" value="tip"> Kargo </label></p>
+</fieldset>
+
+
+	
+
+
+<p>
+<label>Nama Penerima
+<input type="text" name="Nama_Penerima" required list="Tujuan">
+</label>
+
+<datalist id="Tujuan">
+<option value="Airport">
+<option value="Pelabuhan">
+<option value="Rumah/Kantor">
+</datalist>
+</p>
+
+<p>
+<label>Pesan Khusus
+<textarea name="comments" maxlength="1500"></textarea>
+</label>
+</p>
+
+<p><button>Submit Booking</button></p>
+
+</form>
